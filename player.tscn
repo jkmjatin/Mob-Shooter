@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://dewrsuwhjphjv"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_an4wj"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_iurst"]
+[ext_resource type="PackedScene" uid="uid://bk1imayj46g7a" path="res://gun.tscn" id="3_uh67a"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_obq2o"]
+radius = 28.1603
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jfjnl"]
+radius = 35.1283
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dc05u"]
+bg_color = Color(0.152941, 0.168627, 0.188235, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_86tt5"]
+bg_color = Color(0.388235, 0.8, 0.372549, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_an4wj")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_iurst")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -17)
+shape = SubResource("CircleShape2D_obq2o")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-1, -17)
+
+[node name="Gun" parent="." instance=ExtResource("3_uh67a")]
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2(0, -11)
+shape = SubResource("CircleShape2D_jfjnl")
+debug_color = Color(0.87816, 0.327321, 0.256537, 0.42)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -106.0
+offset_top = -127.0
+offset_right = 105.0
+offset_bottom = -108.0
+theme_override_styles/background = SubResource("StyleBoxFlat_dc05u")
+theme_override_styles/fill = SubResource("StyleBoxFlat_86tt5")
+value = 100.0
+show_percentage = false

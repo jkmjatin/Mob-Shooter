@@ -1,0 +1,695 @@
+[gd_scene load_steps=5 format=3 uid="uid://bm8dcda8tsmkc"]
+
+[ext_resource type="Script" path="res://survivours_game.gd" id="1_1475p"]
+[ext_resource type="PackedScene" uid="uid://dewrsuwhjphjv" path="res://player.tscn" id="1_rtxav"]
+[ext_resource type="PackedScene" uid="uid://tuealhucm7o" path="res://pine_tree.tscn" id="2_tkujs"]
+
+[sub_resource type="Curve2D" id="Curve2D_hdjal"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, -185, -256, 0, 0, 0, 0, 2159, -260, 0, 0, 0, 0, 2151, 1352, 0, 0, 0, 0, -177, 1336, 0, 0, 0, 0, -181, -216)
+}
+point_count = 5
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+script = ExtResource("1_1475p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -30
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+offset_right = 1944.0
+offset_bottom = 1096.0
+
+[node name="Player" parent="." instance=ExtResource("1_rtxav")]
+position = Vector2(736, 297)
+
+[node name="Path2D" type="Path2D" parent="Player"]
+position = Vector2(-736, -297)
+curve = SubResource("Curve2D_hdjal")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D4" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D5" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D6" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D2" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D7" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D8" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D9" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D10" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PathFollow2D3" type="PathFollow2D" parent="Player/Path2D"]
+unique_name_in_owner = true
+position = Vector2(-185, -256)
+rotation = -0.00170648
+
+[node name="PineTree" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(446, 638)
+
+[node name="PineTree2" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(411, 369)
+
+[node name="PineTree3" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1421, 372)
+
+[node name="PineTree4" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1564, 369)
+
+[node name="PineTree5" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1505, 311)
+
+[node name="PineTree8" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1191, 179)
+
+[node name="PineTree9" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1255, 698)
+
+[node name="PineTree14" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1327, 747)
+
+[node name="PineTree15" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1390, 821)
+
+[node name="PineTree16" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1291, 900)
+
+[node name="PineTree17" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1471, 904)
+
+[node name="PineTree10" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1685, 866)
+
+[node name="PineTree18" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2080, 392)
+
+[node name="PineTree19" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2150, 969)
+
+[node name="PineTree20" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-347, 800)
+
+[node name="PineTree22" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-279, 902)
+
+[node name="PineTree23" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-402, 915)
+
+[node name="PineTree24" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-461, 1195)
+
+[node name="PineTree26" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-321, -59)
+
+[node name="PineTree27" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(857, -517)
+
+[node name="PineTree28" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1794, -576)
+
+[node name="PineTree29" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1722, -661)
+
+[node name="PineTree30" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1870, -504)
+
+[node name="PineTree31" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2501, -597)
+
+[node name="PineTree32" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2806, 886)
+
+[node name="PineTree33" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-987, 602)
+
+[node name="PineTree34" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-750, -360)
+
+[node name="PineTree35" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-576, 157)
+
+[node name="PineTree36" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1140, -110)
+
+[node name="PineTree37" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(51, -593)
+
+[node name="PineTree38" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3310, -182)
+
+[node name="PineTree39" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3522, 1060)
+
+[node name="PineTree40" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1484, 1611)
+
+[node name="PineTree41" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(799, 1823)
+
+[node name="PineTree42" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2099, 1863)
+
+[node name="PineTree43" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2865, 2044)
+
+[node name="PineTree44" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2905, 1994)
+
+[node name="PineTree45" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(627, -1322)
+
+[node name="PineTree46" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(718, -1342)
+
+[node name="PineTree47" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(627, -1473)
+
+[node name="PineTree62" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1972, 3055)
+
+[node name="PineTree63" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2909, 2996)
+
+[node name="PineTree64" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2837, 2911)
+
+[node name="PineTree65" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2985, 3068)
+
+[node name="PineTree66" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3616, 2975)
+
+[node name="PineTree67" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1166, 2979)
+
+[node name="PineTree68" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1742, 2250)
+
+[node name="PineTree69" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1833, 2230)
+
+[node name="PineTree70" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1742, 2099)
+
+[node name="PineTree71" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2799, 1221)
+
+[node name="PineTree72" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1862, 1162)
+
+[node name="PineTree73" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1934, 1077)
+
+[node name="PineTree74" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1786, 1234)
+
+[node name="PineTree75" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1155, 1141)
+
+[node name="PineTree76" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3605, 1145)
+
+[node name="PineTree77" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3029, 416)
+
+[node name="PineTree78" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2938, 396)
+
+[node name="PineTree79" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3029, 265)
+
+[node name="PineTree48" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1338, 1480)
+
+[node name="PineTree49" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1227, 1561)
+
+[node name="PineTree50" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1509, 795)
+
+[node name="PineTree51" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1610, 866)
+
+[node name="PineTree52" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1660, 745)
+
+[node name="PineTree80" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5323, -63)
+
+[node name="PineTree81" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5391, 39)
+
+[node name="PineTree82" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5268, 52)
+
+[node name="PineTree83" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5209, 332)
+
+[node name="PineTree84" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5349, -922)
+
+[node name="PineTree85" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4683, -261)
+
+[node name="PineTree86" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5094, -706)
+
+[node name="PineTree87" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4530, -973)
+
+[node name="PineTree88" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3808, 299)
+
+[node name="PineTree89" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3736, 214)
+
+[node name="PineTree90" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3884, 371)
+
+[node name="PineTree91" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4515, 278)
+
+[node name="PineTree92" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4332, 617)
+
+[node name="PineTree93" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4443, 698)
+
+[node name="PineTree94" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4161, -68)
+
+[node name="PineTree95" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4060, 3)
+
+[node name="PineTree96" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4010, -118)
+
+[node name="PineTree97" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3022, -1993)
+
+[node name="PineTree98" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3090, -1891)
+
+[node name="PineTree99" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2967, -1878)
+
+[node name="PineTree100" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2908, -1598)
+
+[node name="PineTree101" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3048, -2852)
+
+[node name="PineTree102" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2382, -2191)
+
+[node name="PineTree103" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2793, -2636)
+
+[node name="PineTree104" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2229, -2903)
+
+[node name="PineTree105" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1507, -1631)
+
+[node name="PineTree106" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1435, -1716)
+
+[node name="PineTree107" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1583, -1559)
+
+[node name="PineTree108" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2214, -1652)
+
+[node name="PineTree109" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2031, -1313)
+
+[node name="PineTree110" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2142, -1232)
+
+[node name="PineTree111" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1860, -1998)
+
+[node name="PineTree112" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1759, -1927)
+
+[node name="PineTree113" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1709, -2048)
+
+[node name="PineTree53" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4176, -1704)
+
+[node name="PineTree54" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4811, -948)
+
+[node name="PineTree55" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1962, -1049)
+
+[node name="PineTree114" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2874, 3249)
+
+[node name="PineTree115" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1696, 2791)
+
+[node name="PineTree116" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3303, 2948)
+
+[node name="PineTree117" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3693, 3198)
+
+[node name="PineTree118" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2502, 2715)
+
+[node name="PineTree119" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1926, 1986)
+
+[node name="PineTree120" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1835, 1966)
+
+[node name="PineTree121" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1926, 1835)
+
+[node name="PineTree122" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4515, 2259)
+
+[node name="PineTree123" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5193, 2662)
+
+[node name="PineTree124" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(6371, 2204)
+
+[node name="PineTree125" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4764, 2361)
+
+[node name="PineTree126" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4374, 2611)
+
+[node name="PineTree127" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(5565, 2128)
+
+[node name="PineTree128" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(6141, 1399)
+
+[node name="PineTree129" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(6232, 1379)
+
+[node name="PineTree130" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(6141, 1248)
+
+[node name="PineTree131" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3552, 1672)
+
+[node name="PineTree132" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-836, -1282)
+
+[node name="PineTree133" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(342, -1740)
+
+[node name="PineTree134" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1265, -1583)
+
+[node name="PineTree135" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1655, -1333)
+
+[node name="PineTree136" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-464, -1816)
+
+[node name="PineTree137" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(112, -2545)
+
+[node name="PineTree138" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(203, -2565)
+
+[node name="PineTree139" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(112, -2696)
+
+[node name="PineTree140" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2477, -2272)
+
+[node name="PineTree56" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-440, 2642)
+
+[node name="PineTree57" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(759, 3175)
+
+[node name="PineTree58" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(3518, 3346)
+
+[node name="PineTree59" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4222, 1367)
+
+[node name="PineTree60" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4293, 1341)
+
+[node name="PineTree61" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(4300, 1224)
+
+[node name="PineTree141" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3571, -2388)
+
+[node name="PineTree142" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3503, -2286)
+
+[node name="PineTree143" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3626, -2273)
+
+[node name="PineTree144" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3685, -1993)
+
+[node name="PineTree145" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3545, -3247)
+
+[node name="PineTree146" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4211, -2586)
+
+[node name="PineTree147" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3800, -3031)
+
+[node name="PineTree148" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4364, -3298)
+
+[node name="PineTree149" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-5010, -1954)
+
+[node name="PineTree150" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4379, -2047)
+
+[node name="PineTree151" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4562, -1708)
+
+[node name="PineTree152" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4451, -1627)
+
+[node name="PineTree153" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4733, -2393)
+
+[node name="PineTree154" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4834, -2322)
+
+[node name="PineTree155" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4884, -2443)
+
+[node name="PineTree156" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4718, -4029)
+
+[node name="PineTree157" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4083, -3273)
+
+[node name="PineTree158" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3701, 337)
+
+[node name="PineTree159" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2523, -121)
+
+[node name="PineTree160" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4130, 36)
+
+[node name="PineTree161" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4520, 286)
+
+[node name="PineTree162" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-3329, -197)
+
+[node name="PineTree163" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2753, -926)
+
+[node name="PineTree164" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2662, -946)
+
+[node name="PineTree165" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-2753, -1077)
+
+[node name="PineTree166" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4672, -958)
+
+[node name="PineTree167" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4601, -984)
+
+[node name="PineTree168" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-4594, -1101)
+
+[node name="PineTree169" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(10, 4241)
+
+[node name="PineTree170" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(78, 4343)
+
+[node name="PineTree171" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-45, 4356)
+
+[node name="PineTree172" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-104, 4636)
+
+[node name="PineTree173" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(36, 3382)
+
+[node name="PineTree174" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-630, 4043)
+
+[node name="PineTree175" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-219, 3598)
+
+[node name="PineTree176" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-783, 3331)
+
+[node name="PineTree177" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1429, 4675)
+
+[node name="PineTree178" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-798, 4582)
+
+[node name="PineTree179" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-981, 4921)
+
+[node name="PineTree180" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-870, 5002)
+
+[node name="PineTree181" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1152, 4236)
+
+[node name="PineTree182" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1253, 4307)
+
+[node name="PineTree183" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1303, 4186)
+
+[node name="PineTree184" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1137, 2600)
+
+[node name="PineTree185" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-502, 3356)
+
+[node name="PineTree186" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-120, 6966)
+
+[node name="PineTree187" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(1058, 6508)
+
+[node name="PineTree188" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-549, 6665)
+
+[node name="PineTree189" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-939, 6915)
+
+[node name="PineTree190" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(252, 6432)
+
+[node name="PineTree191" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(828, 5703)
+
+[node name="PineTree192" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(919, 5683)
+
+[node name="PineTree193" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(828, 5552)
+
+[node name="PineTree194" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1091, 5671)
+
+[node name="PineTree195" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1020, 5645)
+
+[node name="PineTree196" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(-1013, 5528)
+
+[node name="PineTree25" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(2565, 373)
+
+[node name="PineTree21" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(373, 1270)
+
+[node name="PineTree11" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(628, 921)
+
+[node name="PineTree12" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(275, 145)
+
+[node name="PineTree13" parent="." instance=ExtResource("2_tkujs")]
+position = Vector2(858, 170)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+unique_name_in_owner = true
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.784314)
+
+[node name="Label" type="Label" parent="GameOver/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.5
+offset_top = -11.5
+offset_right = 48.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 81
+text = "GAME OVER!"
+
+[connection signal="health_depleted" from="Player" to="." method="_on_player_health_depleted"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
