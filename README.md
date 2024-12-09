@@ -1,8 +1,10 @@
 # Mob-Shooter
-Mob Shooter - a 2D game developed by Jatin Kumar Mehta as mini project to be submitted in partial fulfillment of the 5th semester as a Computer Science &amp; Engineering student.
-
+* Mob Shooter - a 2D game developed by Jatin Kumar Mehta as mini project to be submitted in partial fulfillment of the 5th semester as a Computer Science &amp; Engineering student.
 ---
-
+* Game Download link: https://www.dropbox.com/scl/fi/zxg0j6g3toxi1bryg8ia4/Mob-Shooter.exe?rlkey=ilnzhlgk3gut2vpmczcuq7j05&st=hklwimda&dl=0
+---
+* Supported on: **Windows (Desktop/Laptop)**
+---
 * Game Engine Used: **Godot**
 * Game engine **Godot**: https://godotengine.org/
 * Programming Language/s Used: **GDScript**
